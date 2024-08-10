@@ -3,6 +3,8 @@
 
 Ans: print('hi')
 
+
+
 2. # Exercise 2
 ''' The following lines won't run properly,
     even if the syntax error in the line above is corrected,
@@ -13,20 +15,30 @@ Ans:
 	 hello='Hi, Good Morning'
 	 print(hello)
 
+
+
 3. #  Display a string (greeting message) directly 
 Ans: print('Hey, Good Morning')
+
+
 
 4. # Display the contents of a string variable
 Ans: a='Hello'
      print(a)
 
+
+
 5. # Display the string which contains single quotes 
      Ex: Indian's
 Ans: print("Indian's")
 
+
+
 6. # Display the string which contains Double Quotes 
      Ex: Students,"Welcome to SOIS".
 Ans: print('Students,"Welcome to SOIS"') 
+
+
 
 6. Read two numbers in (user input) and store as num1 and num2, Calculate the sum, difference, product, Quotient, reminder, power
 Ans: num1=int(input())
@@ -39,6 +51,7 @@ Ans: num1=int(input())
      print(num1**num2)
 
 
+
 7. check the value of num1 is integer or not? 
 Ans: 
 	num1 = 20
@@ -48,6 +61,7 @@ Ans:
     		print(num1, 'is not an integer!!')
      
 
+
 8. convert into integer
 Ans: a=input()
      print(type(a))
@@ -55,21 +69,29 @@ Ans: a=input()
      print(type(b))
      print(b)  
 
+
+
 9. Find the datatype for the variable num1 and num2.
 Ans: a=10.0
      b='Hello'
      print(type(a))
      print(type(b))  
 
+
+
 10. read the float value from the user and print the number rounded to 2 decimal places
 Ans: number=float(input())
      print(round(number,2))
+
+
 
 11. read the float value from the user and print the absolute value 
 Ans: 
 	number = float(input("Enter a float value: "))
 	absolute_value = abs(number)
 	print(absolute_value)
+
+
 
 12. Store different type values in the variable 
 
@@ -115,6 +137,7 @@ tuple
 
 
 
+
 13. Find the data type for the above variables 
 Ans:
 	print("Data Type of my_string:", type(my_string))
@@ -125,12 +148,14 @@ Ans:
 	print("Data Type of my_dict:", type(my_dict))
 	print("Data Type of my_set:", type(my_set))
 	print("Data Type of my_tuple:", type(my_tuple))
-	
+
+
 
 14. # Display the number of letters in the string
     greeting = "Welcome to Python Programming"
 Ans:  print(len(greeting))         (including spaces)
       print(len(greeting.replace(" ","")))
+
 
 
 15. read the first name and last name from the user and combine first name and last name. combine name and greeting message
@@ -140,6 +165,7 @@ Ans: a=input()
      print('Hi ',full_name)
 
 
+
 16. Display the string with space 
     Ex: firstname lastname 
      firstname=input()
@@ -147,30 +173,42 @@ Ans: a=input()
      full_name=firstname+" "+lastname
      print('Hi ',full_name)
 
+
+
 17. Display first two characters from the name 
 Ans:
 	a=input()
 	print(a[:2])
+
+
 
 18. Display last three characters from the name 
 Ans: 
 	a=input()
 	print(a[-3:])
 
+
+
 19. Display 3rd character to last character 
 Ans:
 	a=input()
 	print(a[2:])
+
+
 
 20. Display 3rd to 5th character 
 Ans:
 	a=input()
 	print(a[2:5])
 
+
+
 21. Create a list of food with two elements.
 Ans: 	
 	lst=['Idli','Dosa']
 	print(lst)
+
+
 
 22. Add one more to the food list using .append()
 Ans: 
@@ -179,6 +217,7 @@ Ans:
 	lst.append('Parotta')
 	print(lst)
 	
+
 
 23. Add two more food strings to food using .extend()
 Ans:
@@ -190,16 +229,19 @@ Ans:
 	print(lst1)
 
 
+
 24. Count total number of items in the list 
 Ans:
 	lst1=['Idli','Dosa','Poori','Chapathi','Sandwich']
 	print(len(lst1))
 	
 
+
 25. Print the first two items in food using slicing notation
 Ans:
 	lst1=['Idli','Dosa','Poori','Chapathi','Sandwich']
 	print(lst1[0:2])
+
 
 
 26. Print the last item in food using index notation
@@ -218,11 +260,15 @@ ans:
 	else:
     		print("The number is Odd.")
 
+
+
 28. Debug: Program is to convert centigrade to Fahrenheit
 Ans:
 	c = float(input("Enter temperature in Centigrade: "))
 	f = 9*(int(c))/5 +32
 	print("Temperature in Fahrenheit is: ",f)
+
+
 
 29. Debug: 
 ans:
@@ -235,6 +281,8 @@ ans:
 	avg = summ/count
 
 	print("The average is: ", avg)
+
+
 
 30. Prove : strings is not mutable 
             lists are mutable 
@@ -249,10 +297,4 @@ Ans:
 	print(lst)		(Since lst are mutable the first element is replaced with new element)
 
 	
-
-
-==========================================================================
-Deadline 14.08.2024
-==========================================================================
-
 
