@@ -219,21 +219,22 @@ ans:
     		print("The number is Odd.")
 
 28. Debug: Program is to convert centigrade to Fahrenheit
-
-c = float(input("Enter temperature in Centigrade: "))
-f = 9*(int(c))/5 +32
-print("Temperature in Fahrenheit is: ",f)
+Ans:
+	c = float(input("Enter temperature in Centigrade: "))
+	f = 9*(int(c))/5 +32
+	print("Temperature in Fahrenheit is: ",f)
 
 29. Debug: 
-count = int(input("Enter the count of numbers: "))
-i = 0
-summ= 0
-for i in range(count):
-    x = int(input("Enter an integer: "))
-    summ = summ + x
-avg = summ/count
+ans:
+	count = int(input("Enter the count of numbers: "))
+	i = 0
+	summ= 0
+	for i in range(count):
+    		x = int(input("Enter an integer: "))
+    		summ = summ + x
+	avg = summ/count
 
-print("The average is: ", avg)
+	print("The average is: ", avg)
 
 30. Prove : strings is not mutable 
             lists are mutable 
