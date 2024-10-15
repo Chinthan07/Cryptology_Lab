@@ -95,7 +95,7 @@ def columnar_transposition_encrypt(plaintext, key):
     return ciphertext
 
 plaintext = input('Enter Plain Text: ')
-key = input('Enter the Key (word): ')
+key = input('Enter the Key (Word or Number): ')
 ciphertext = columnar_transposition_encrypt(plaintext, key)
 print(f"Ciphertext: {ciphertext}")
 
