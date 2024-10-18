@@ -12,7 +12,6 @@ def check_coprime(a, b):
     else:
         print(f"{a} and {b} are not co-prime and are not suitable for cryptographic key generation.")
 
-# Taking two integers as input
 a = int(input("Enter first integer: "))
 b = int(input("Enter second integer: "))
 check_coprime(a, b)
@@ -34,7 +33,6 @@ def modular_inverse(n, m):
     else:
         print(f"The modular inverse of {n} mod {m} is {x % m}.")
 
-# Taking input for n and m
 n = int(input("Enter number (n): "))
 m = int(input("Enter modulo (m): "))
 modular_inverse(n, m)
@@ -60,11 +58,9 @@ def check_repeated_subsequence(binary_str):
     print("No repeated subsequences found.")
     return False
 
-# Generate a random binary sequence of length 100
 binary_sequence = generate_binary_string(100)
 print(f"Generated binary sequence: {binary_sequence}")
 
-# Check for repeated subsequences
 check_repeated_subsequence(binary_sequence)
 
 
@@ -76,12 +72,10 @@ check_repeated_subsequence(binary_sequence)
 #           - Print a message indicating whether the sequence passes the Golomb tests or not.
 
 def golomb_test(sequence):
-    # Test 1: Equal number of 0s and 1s (or difference by at most 1)
     ones = sequence.count('1')
     zeros = sequence.count('0')
     test1 = abs(ones - zeros) <= 1
 
-    # Test 2: Runs test (number of runs of each length should be as expected)
     runs = {'0': [], '1': []}
     current_char = sequence[0]
     current_run_length = 1
@@ -98,12 +92,10 @@ def golomb_test(sequence):
     max_run_length = max(len(runs['0']), len(runs['1']))
     test2 = all(len(runs[c]) >= max_run_length // 2 for c in runs)
 
-    # Test 3: Runs of the same length are evenly distributed
     run_lengths_0 = set(runs['0'])
     run_lengths_1 = set(runs['1'])
     test3 = run_lengths_0 == run_lengths_1
 
-    # Print results
     print(f"Test 1 (Equal 0s and 1s): {'Passed' if test1 else 'Failed'}")
     print(f"Test 2 (Runs test): {'Passed' if test2 else 'Failed'}")
     print(f"Test 3 (Even distribution of run lengths): {'Passed' if test3 else 'Failed'}")
@@ -113,7 +105,6 @@ def golomb_test(sequence):
     else:
         print("The sequence does not pass the Golomb tests.")
 
-# Sequences to test
 sequences = ["101011001010", "111111000000"]
 
 for seq in sequences:
